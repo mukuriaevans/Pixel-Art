@@ -1,7 +1,7 @@
-// Select color input
-// Select size input
 
-// When size is submitted by the user, call makeGrid()
+
+
+
 (function(document){
 	'use strict';
 	
@@ -11,18 +11,22 @@
 		widthInput: document.getElementById('inputWidth'),
 		heightInput: document.getElementById('inputHeight')
 	};
-	
+
+// Select size input	
 const init = function(){
 // Event Listener
 	document.getElementById('sizePicker').addEventListener('submit', makeGrid, false );
+
+// Select color input
 
 // Grid color listner
 	elements.gridCanvas.addEventListener('click', setGridColor);
 	
 };
+// When size is submitted by the user, it calls makeGrid()
 	function makeGrid() {
-// Your code goes here!
-		//prevent the page from submiting non-existent back end task 
+
+		//prevent default tasks 
 		//whih would cause the page to refresh
 		
 		event.preventDefault();
